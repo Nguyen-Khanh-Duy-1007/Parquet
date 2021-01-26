@@ -1,0 +1,20 @@
+						Hướng dẫn demo trên Apache Parquet trên Hadoop Mapreduce
+- Chuyển file csv sang parquet(my.scv 5GB)
+	+ Cách 1: Chuyển bằng thư viện pandas của python sử dụng Jupyter Notebook
+
+	+ Cách 2: Chuyển file trong hadoop mô hình Hadoop Mapreduce
+
+- Demo
+	Bước 1: Tiến hành chuyển file theo cách 1(chạy theo source code)
+
+	Bước 2: Bật ubuntu, khởi động hadoop mapreduce (startall.sh)
+		
+	Bước 3: Chuyển file train.csv từ local vào hdfs và tiến hành chuyển thành file theo cách 2 -> kiểm tra thư mục hdfs
+		- Tạo 1 thư mục Parquet mới trong hdfs
+		- Copy file từ local sang hdfs
+
+	Bước 5: Load, xem thuộc tính của file parquet spark, 
+		- Khởi động spark-shell
+		- Tiến hành đọc file
+	Bước 6: Thực hiện truy vấn trên file parquet
+-Xem chi tiết tại link youtube: https://www.youtube.com/watch?v=dwac3yafPNw&t=20s
